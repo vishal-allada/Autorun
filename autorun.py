@@ -2,7 +2,7 @@ import os
 import os.path as op
 
 # Add the path here
-PATH = "Data_Explorer/"
+PATH = "Model_Eval/"
 
 START_PATH = op.dirname(op.abspath(__file__))
 
@@ -15,5 +15,7 @@ with os.scandir(PATH) as entries:
             python_scripts.append(file_name)
 
 for py_file in python_scripts:
+    print("Running ", py_file)
+    print(60 * "-")
     os.system("cd " + PATH + "&" + "python " + PATH + py_file)
     input("Press Enter to run the next file (if exists..)")
