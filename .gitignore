@@ -5,3 +5,11 @@ Data_Explorer/
 EDA/
 Model_Eval/
 Model_Monitoring/
+logs/
+*.xlsx
+*.csv
+*.html
+Reports/
+reports/
+report/
+Report/
